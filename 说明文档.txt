@@ -1,0 +1,19 @@
+Common参考之前学长Saint作业，很值得学习研究
+
+1.1 定义一个抽象父类“口技表演” Interface.Ventriloquism
+1.2 定义一个接口，用于收费  Interface.ICharge
+1.3 创建四个口技表演的子类对象继承抽象类   详见Faction项目
+理解对象里面属性、抽象方法、虚方法和接口方法的区别
+属性没有参数概念，只有set,get方法。方法体中只能系统value值或类内成员。前端调用更方便无须（）；
+抽象方法不能使用private限定符，没有方法体，类必须标注abstract,必须在继续类里override实现
+虚方法不能使用private限定符,有一般方法体，也可以通过继续类里override实现
+接口方法不能有限定符，没有方法体，接口必须标注interface ,必须在继续类里实现,但可以支持多接口继承
+
+2 口技表演抽象类定义一个事件，用于模拟"火起"后的场景 用RegisterEvent注册订阅事件 Ignition方法满足条件，触发事件
+
+3 在每个动作都要求把文字输出到控制台信息，同时还要求记录文本日志 LogHelper.WriteInfoLog 调用内部方法_WriteLog记录日志
+
+4 序列化与反序列化时 实体类没有加注[Serializable]特征，还是可以正常使用JsonHelper类与XmlHelper方法。
+  在序列化标记还不是很清楚，求助何时一定需要用Serializable？
+
+
